@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Thông báo</title>
+</head>
+<body>
+<h1>Thêm ca khúc thành công thành công</h1>
+<p>
+    <a href="/index">Danh sách bài hát</a>
+    <br>
+    <a href="/create">Thêm bài hát mới</a>
+</p>
+<p>Tên bài hát:</p>
+<p>
+    <a th:text="${song.name}"></a>
+</p>
+<p>Nghệ sĩ:</p>
+<p>
+    <a th:text="${song.singer}"></a>
+</p>
+<p>Thể loại:</p>:</p>
+<p>
+    <a th:text="${song.category}"></a>
+</p>
+</body>
+</html>
